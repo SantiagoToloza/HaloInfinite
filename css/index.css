@@ -36,6 +36,8 @@ nav ul li > a {
     padding: 20px 15px 10px 15px;
     text-decoration: none;
     color: white;
+    font-size: 15px;
+    font-weight: 600;
 }
 nav ul li .link::before{
     content: '';
@@ -108,11 +110,12 @@ nav .mobile .links{
 }
 
 nav .mobile .links a{
-    font-size: 18px;
+    font-size: px;
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: white;
+    font-weight: 800;
 
 }
 nav .mobile .links a:hover{
@@ -255,6 +258,39 @@ h3{
     color: white;
 }
 
+
+#videos #slider #controls {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#videos #slider #controls .prev,
+#videos #slider #controls .next{
+    border: none;
+    height: 50px;
+    width: 80px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#videos #slider #controls .prev:hover,
+#videos #slider #controls .next:hover{
+    background-color: rgb(37, 37, 37);
+}
+
+
+#videos #slider #current{
+    width: 1280px;
+    margin: 50px auto;
+    border: solid 1px #00c3ff;
+}
+
 #videos{
     text-align: center;
     padding: 50px 0;
@@ -269,12 +305,27 @@ h3{
 @media screen and (max-width : 840px) {
     nav .link-hide{
         display: none;
+        
+    }
+    nav a{
+        font-size: 15px;
+        font-weight: 600;
     }
     nav .more{
         display: flex;
     }
     header{
         height: 70vh;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    #banner{
+        top: 120px;
+        padding: 50px;
+        right: 30px;
+        
+
     }
 }
 
@@ -304,12 +355,13 @@ h3{
     #banner{
         position: initial !important;
         width: 100%;
-        padding: 20px 0;
-        
+        padding: 0;
+        margin-top: 40px;
     }
 
     .show{
         margin:0px;
+        padding: 10px 0;
     }
 
 
